@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stock Analysis</title>
+    </head>
+    <body>
+        <h1>Stock Chart</h1>
+        <form method="POST" action="/">
+            <label for="stock">Symbol</label>
+            <input type="text" name="stock" id="stock" required>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <div id="plotly_chart"></div>
+            <script src=""https://cdn.plot.ly/plotly-latest.min.js"></script>
+            {{ div_placeholder|safe }}
+            {{ script_placeholder|safe }}
+    </body>
+</html>
