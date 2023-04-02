@@ -9,7 +9,8 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 #Configuring Finnhub API
-finnhub_client = finnhub.Client(api_key='cgd294pr01qum7u5r1o0cgd294pr01qum7u5r1og')
+#Put your FinnHub API key here
+finnhub_client = finnhub.Client(api_key='#')
 
 #Specifying stock based on user input
 @app.route('/', methods=['GET', 'POST'])
