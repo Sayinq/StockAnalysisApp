@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 #Configuring Finnhub API
+#Put your Finnhub API key here
 finnhub_client = finnhub.Client(api_key='#')
 
 #Specifying stock based on user input
