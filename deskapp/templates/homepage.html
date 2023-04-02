@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='homepage.css') }}">
+
+        <title>Stock Analysis</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+
+    <body>
+        <div class="app">
+        <div class="title">
+            <h1>Stock Analysis</h1>
+        </div>
+        <div class="input">
+        <form method="POST" action="/">
+            <input type="text" name="stock" placeholder="Enter stock symbol">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+        {% if plot %}
+        <div id="plot">{{ plot|safe }}</div>
+        {% endif %}
+</div>
+    </body>
+</html>

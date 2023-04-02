@@ -1,0 +1,27 @@
+body {
+    background-color: burlywood;
+    font-family: 'Montserrat';
+    margin: 0 auto;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app .title {
+    color: white;
+    font-size: 24px;
+}
+
+#plot {
+    margin-top: 5%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
