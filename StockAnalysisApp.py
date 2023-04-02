@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 #Configuring Finnhub API
-finnhub_client = finnhub.Client(api_key='cgd294pr01qum7u5r1o0cgd294pr01qum7u5r1og')
+finnhub_client = finnhub.Client(api_key='#')
 
 #Specifying stock based on user input
 userinput = input("What is your symbol?: ")
